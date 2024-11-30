@@ -5,37 +5,79 @@ import { useEffect, useMemo, useState } from "react";
 interface Surprise {
   day: number;
   surprise: string;
+  embedGIF: string;
 }
 
 const surprises: Surprise[] = [
-  { day: 17, surprise: "jóóóó nagy pohár házi forró csoki!" },
-  { day: 3, surprise: "meseszerű, közös gyertyaöntés!" },
-  { day: 24, surprise: "bolondfinom karácsonyos gumicukor!" },
-  { day: 12, surprise: "csodálatos, pihe-puha karácsonyi ágynemű!" },
-  { day: 9, surprise: "utánozhatatlan lábmasszázs kupon!" },
-  { day: 1, surprise: "mikis-minis karifadísz!" },
-  { day: 20, surprise: "moziest választható filmmel és nachosszal!" },
+  {
+    day: 17,
+    surprise: "jóóóó nagy pohár házi forró csoki!",
+    embedGIF: "https://giphy.com/embed/WmkqburJqXziM",
+  },
+  {
+    day: 3,
+    surprise: "meseszerű, közös gyertyaöntés!",
+    embedGIF: "https://giphy.com/embed/9w475hDWEPVlu",
+  },
+  { day: 24, surprise: "bolondfinom karácsonyos gumicukor!", embedGIF: "" },
+  {
+    day: 12,
+    surprise: "csodálatos, pihe-puha karácsonyi ágynemű!",
+    embedGIF: "https://giphy.com/embed/l0MYw0DsFJc0kU0Jq",
+  },
+  { day: 9, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
+  { day: 1, surprise: "mikis-minis karifadísz!", embedGIF: "" },
+  {
+    day: 20,
+    surprise: "moziest választható filmmel és nachosszal!",
+    embedGIF: "",
+  },
   {
     day: 10,
     surprise:
       "nagy kóborlás a karácsonyi vásárban (szabadon választható, hol)!",
+    embedGIF: "",
   },
-  { day: 6, surprise: "közös gyöngyfűzős délután!" },
-  { day: 22, surprise: "naaaagy mézi párna!" },
-  { day: 4, surprise: "csodálatos emlék Kamilláról!" },
-  { day: 21, surprise: "bolondos kigurítható gyerekrágó!" },
-  { day: 8, surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)" },
-  { day: 15, surprise: "csodálatos karácsonyi ágynemű" },
-  { day: 2, surprise: "utánozhatatlan lábmasszázs kupon!" },
-  { day: 13, surprise: "pénisz alakú sütikiszúró forma!!!" },
-  { day: 5, surprise: "ínycsiklandó svéd húsgolyós vacsi és a Frozen!" },
-  { day: 18, surprise: "pihentő, lazító kismama masszázs!" },
-  { day: 19, surprise: "utánozhatatlan lábmasszázs kupon!" },
-  { day: 7, surprise: "látogatás a Karácsonyházban!" },
-  { day: 11, surprise: "szerelmetes közös üvegfestős délután!" },
-  { day: 14, surprise: "szuperizginek ígérkező, közös mézeskalács sütés!" },
-  { day: 16, surprise: "utánozhatatlan lábmasszázs kupon!" },
-  { day: 23, surprise: "utánozhatatlan lábmasszázs kupon!" },
+  { day: 6, surprise: "közös gyöngyfűzős délután!", embedGIF: "" },
+  { day: 22, surprise: "naaaagy mézi párna!", embedGIF: "" },
+  {
+    day: 4,
+    surprise: "csodálatos emlék Kamilláról!",
+    embedGIF: "https://giphy.com/embed/H5Ooe4b04mkawWC8KN",
+  },
+  { day: 21, surprise: "bolondos kigurítható gyerekrágó!", embedGIF: "" },
+  {
+    day: 8,
+    surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)",
+    embedGIF: "https://giphy.com/embed/9JrvLb0fnrn7k1ZjhX",
+  },
+  { day: 15, surprise: "csodálatos karácsonyi ágynemű", embedGIF: "" },
+  {
+    day: 2,
+    surprise: "utánozhatatlan lábmasszázs kupon!",
+    embedGIF: "https://giphy.com/embed/LBAv3HJDl2WwU",
+  },
+  { day: 13, surprise: "pénisz alakú sütikiszúró forma!!!", embedGIF: "" },
+  {
+    day: 5,
+    surprise: "ínycsiklandó svéd húsgolyós vacsi és a Frozen!",
+    embedGIF: "https://giphy.com/embed/l2YWluoNgk342F3k4",
+  },
+  { day: 18, surprise: "pihentő, lazító kismama masszázs!", embedGIF: "" },
+  { day: 19, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
+  {
+    day: 7,
+    surprise: "látogatás a Karácsonyházban!",
+    embedGIF: "https://giphy.com/embed/RlkxV4vKnKqtXLj2qw",
+  },
+  { day: 11, surprise: "szerelmetes közös üvegfestős délután!", embedGIF: "" },
+  {
+    day: 14,
+    surprise: "szuperizginek ígérkező, közös mézeskalács sütés!",
+    embedGIF: "",
+  },
+  { day: 16, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
+  { day: 23, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
 ];
 
 function AdventCalendar() {
@@ -128,7 +170,7 @@ function AdventCalendar() {
           } duration-300 ease-in-out`}
         >
           <div
-            className={`m-4 bg-orange-700 p-6 rounded-lg max-w-md w-full text-center transform transition-all ${
+            className={`m-4 bg-orange-700 p-6 rounded-lg max-w-md w-full text-center transform transition-all flex flex-col items-center ${
               modalTransition ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
           >
@@ -139,6 +181,11 @@ function AdventCalendar() {
               A mai nap meglepetése nem más, mint egy{" "}
               {currentSurprise?.surprise || ""}
             </p>
+            <iframe
+              src={currentSurprise?.embedGIF}
+              width="240"
+              height="132"
+            ></iframe>
             <button
               onClick={closeModal}
               className="mt-4 px-4 py-2 bg-yellow-300 text-gray-800 rounded-lg hover:bg-yellow-400"
