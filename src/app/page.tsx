@@ -42,7 +42,7 @@ const surprises: Surprise[] = [
   { day: 22, surprise: "naaaagy mézi párna!", embedGIF: "" },
   {
     day: 4,
-    surprise: "csodálatos emlék Kamilláról!",
+    surprise: "pénisz alakú sütikiszúró forma!!!",
     embedGIF: "https://giphy.com/embed/H5Ooe4b04mkawWC8KN",
   },
   { day: 21, surprise: "bolondos kigurítható gyerekrágó!", embedGIF: "" },
@@ -57,7 +57,7 @@ const surprises: Surprise[] = [
     surprise: "utánozhatatlan lábmasszázs kupon!",
     embedGIF: "https://giphy.com/embed/LBAv3HJDl2WwU",
   },
-  { day: 13, surprise: "pénisz alakú sütikiszúró forma!!!", embedGIF: "" },
+  { day: 13, surprise: "csodálatos emlék Kamilláról!", embedGIF: "" },
   {
     day: 5,
     surprise: "ínycsiklandó svéd húsgolyós vacsi és a Frozen!",
@@ -100,7 +100,7 @@ function AdventCalendar() {
   }, []);
 
   const handleClick = (index: number) => {
-    if (currentDay !== index && !openedWindows[index]) {
+    if (currentDay < index && !openedWindows[index]) {
       setWarnModalOpen(true);
       setTimeout(() => setModalTransition(true), 50);
       return;
@@ -175,7 +175,7 @@ function AdventCalendar() {
             }`}
           >
             <h2 className="text-xl font-bold mb-4 text-yellow-300">
-              Advent, {currentWindow + 1}. nap
+              Advent, {currentWindow}. nap
             </h2>
             <p className="text-lg text-yellow-300">
               A mai nap meglepetése nem más, mint egy{" "}
