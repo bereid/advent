@@ -19,14 +19,26 @@ const surprises: Surprise[] = [
     surprise: "meseszerű, közös gyertyaöntés!",
     embedGIF: "https://giphy.com/embed/9w475hDWEPVlu",
   },
-  { day: 24, surprise: "bolondfinom karácsonyos gumicukor!", embedGIF: "" },
+  {
+    day: 24,
+    surprise: "bolondfinom karácsonyos gumicukor!",
+    embedGIF: "https://giphy.com/embed/1fm29sYp7a4h1HxtgC",
+  },
   {
     day: 12,
     surprise: "csodálatos, pihe-puha karácsonyi ágynemű!",
     embedGIF: "https://giphy.com/embed/l0MYw0DsFJc0kU0Jq",
   },
-  { day: 9, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
-  { day: 1, surprise: "mikis-minis karifadísz!", embedGIF: "" },
+  {
+    day: 9,
+    surprise: "utánozhatatlan lábmasszázs kupon!",
+    embedGIF: "https://giphy.com/embed/WqtgbDR0bCkms",
+  },
+  {
+    day: 1,
+    surprise: "mikis-minis karifadísz!",
+    embedGIF: "https://giphy.com/embed/l0MYw0DsFJc0kU0Jq",
+  },
   {
     day: 20,
     surprise: "moziest választható filmmel és nachosszal!",
@@ -34,24 +46,31 @@ const surprises: Surprise[] = [
   },
   {
     day: 10,
-    surprise:
-      "nagy kóborlás a karácsonyi vásárban (szabadon választható, hol)!",
-    embedGIF: "",
+    surprise: "szuperizginek ígérkező, közös mézeskalács sütés!",
+    embedGIF: "https://giphy.com/embed/xT9Igtvkzd2z4N6c2Q",
   },
-  { day: 6, surprise: "közös gyöngyfűzős délután!", embedGIF: "" },
+  {
+    day: 6,
+    surprise: "szerelmetes közös üvegfestős délután!",
+    embedGIF: "https://giphy.com/embed/FhcAZGmwsUegBaLMni",
+  },
   { day: 22, surprise: "naaaagy mézi párna!", embedGIF: "" },
   {
     day: 4,
     surprise: "pénisz alakú sütikiszúró forma!!!",
     embedGIF: "https://giphy.com/embed/H5Ooe4b04mkawWC8KN",
   },
-  { day: 21, surprise: "bolondos kigurítható gyerekrágó!", embedGIF: "" },
+  { day: 21, surprise: "közös gyöngyfűzős délután!", embedGIF: "" },
   {
     day: 8,
-    surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)",
-    embedGIF: "https://giphy.com/embed/9JrvLb0fnrn7k1ZjhX",
+    surprise: "látogatás a Karácsonyházban!",
+    embedGIF: "https://giphy.com/embed/RlkxV4vKnKqtXLj2qw",
   },
-  { day: 15, surprise: "csodálatos karácsonyi ágynemű", embedGIF: "" },
+  {
+    day: 15,
+    surprise: "csatangolás a Városligetben, puncsozás, korizó-stalking!",
+    embedGIF: "",
+  },
   {
     day: 2,
     surprise: "utánozhatatlan lábmasszázs kupon!",
@@ -67,13 +86,14 @@ const surprises: Surprise[] = [
   { day: 19, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
   {
     day: 7,
-    surprise: "látogatás a Karácsonyházban!",
-    embedGIF: "https://giphy.com/embed/RlkxV4vKnKqtXLj2qw",
+    surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)",
+    embedGIF: "https://giphy.com/embed/9JrvLb0fnrn7k1ZjhX",
   },
-  { day: 11, surprise: "szerelmetes közös üvegfestős délután!", embedGIF: "" },
+  { day: 11, surprise: "", embedGIF: "" },
   {
     day: 14,
-    surprise: "szuperizginek ígérkező, közös mézeskalács sütés!",
+    surprise:
+      "nagy kóborlás a karácsonyi vásárban (szabadon választható, hol)!",
     embedGIF: "",
   },
   { day: 16, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
