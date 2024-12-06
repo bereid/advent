@@ -26,7 +26,7 @@ const surprises: Surprise[] = [
   },
   {
     day: 12,
-    surprise: "csodálatos, pihe-puha karácsonyi ágynemű!",
+    surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)",
     embedGIF: "https://giphy.com/embed/l0MYw0DsFJc0kU0Jq",
   },
   {
@@ -86,7 +86,7 @@ const surprises: Surprise[] = [
   { day: 19, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
   {
     day: 7,
-    surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)",
+    surprise: "csodálatos, pihe-puha karácsonyi ágynemű!",
     embedGIF: "https://giphy.com/embed/9JrvLb0fnrn7k1ZjhX",
   },
   { day: 11, surprise: "", embedGIF: "" },
