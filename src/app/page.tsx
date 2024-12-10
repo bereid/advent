@@ -41,7 +41,7 @@ const surprises: Surprise[] = [
   },
   {
     day: 20,
-    surprise: "moziest választható filmmel és nachosszal!",
+    surprise: "",
     embedGIF: "",
   },
   {
@@ -89,7 +89,12 @@ const surprises: Surprise[] = [
     surprise: "csodálatos, pihe-puha karácsonyi ágynemű!",
     embedGIF: "https://giphy.com/embed/9JrvLb0fnrn7k1ZjhX",
   },
-  { day: 11, surprise: "", embedGIF: "" },
+  {
+    day: 11,
+    surprise:
+      "egy naaaaagy tál nachos sajtszósszal vagy salsával és egy felejthetetlen moziest választható filmmel",
+    embedGIF: "https://giphy.com/embed/EqjqXkrEb9XNEJam1A",
+  },
   {
     day: 14,
     surprise:
