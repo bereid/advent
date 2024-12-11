@@ -26,7 +26,7 @@ const surprises: Surprise[] = [
   },
   {
     day: 12,
-    surprise: "mikulás virág! (Tudjuk, hogy életben tudod tartani!)",
+    surprise: "edzs ínycsiklandó, ámdebár cukormentes finomság: caramea!",
     embedGIF: "https://giphy.com/embed/l0MYw0DsFJc0kU0Jq",
   },
   {
