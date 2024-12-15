@@ -76,13 +76,21 @@ const surprises: Surprise[] = [
     surprise: "utánozhatatlan lábmasszázs kupon!",
     embedGIF: "https://giphy.com/embed/LBAv3HJDl2WwU",
   },
-  { day: 13, surprise: "csodálatos emlék Kamilláról!", embedGIF: "" },
+  {
+    day: 13,
+    surprise: "csodálatos emlék Kamilláról!",
+    embedGIF: "https://giphy.com/embed/xT0xeMA62E1XIlup68",
+  },
   {
     day: 5,
     surprise: "ínycsiklandó svéd húsgolyós vacsi és a Frozen!",
     embedGIF: "https://giphy.com/embed/l2YWluoNgk342F3k4",
   },
-  { day: 18, surprise: "pihentő, lazító kismama masszázs!", embedGIF: "" },
+  {
+    day: 18,
+    surprise: "egy adag cukkeromentes nasi-masi!",
+    embedGIF: "https://giphy.com/embed/xT0xeMA62E1XIlup68",
+  },
   { day: 19, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
   {
     day: 7,
@@ -101,7 +109,11 @@ const surprises: Surprise[] = [
       "nagy kóborlás a karácsonyi vásárban (szabadon választható, hol)!",
     embedGIF: "",
   },
-  { day: 16, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
+  {
+    day: 16,
+    surprise: "utánozhatatlan lábmasszázs kupon!",
+    embedGIF: "https://giphy.com/embed/xTiN0CNHgoRf1Ha7CM",
+  },
   { day: 23, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
 ];
 
