@@ -21,8 +21,8 @@ const surprises: Surprise[] = [
   },
   {
     day: 24,
-    surprise: "bolondfinom karácsonyos gumicukor!",
-    embedGIF: "https://giphy.com/embed/1fm29sYp7a4h1HxtgC",
+    surprise: "",
+    embedGIF: "",
   },
   {
     day: 12,
@@ -41,8 +41,8 @@ const surprises: Surprise[] = [
   },
   {
     day: 20,
-    surprise: "",
-    embedGIF: "",
+    surprise: "incsi fincsi gumicukor!",
+    embedGIF: "https://giphy.com/embed/1fm29sYp7a4h1HxtgC",
   },
   {
     day: 10,
@@ -54,7 +54,7 @@ const surprises: Surprise[] = [
     surprise: "szerelmetes közös üvegfestős délután!",
     embedGIF: "https://giphy.com/embed/FhcAZGmwsUegBaLMni",
   },
-  { day: 22, surprise: "naaaagy mézi párna!", embedGIF: "" },
+  { day: 22, surprise: "", embedGIF: "" },
   {
     day: 4,
     surprise: "pénisz alakú sütikiszúró forma!!!",
@@ -91,7 +91,11 @@ const surprises: Surprise[] = [
     surprise: "egy adag cukkeromentes nasi-masi!",
     embedGIF: "https://giphy.com/embed/xT0xeMA62E1XIlup68",
   },
-  { day: 19, surprise: "utánozhatatlan lábmasszázs kupon!", embedGIF: "" },
+  {
+    day: 19,
+    surprise: "utánozhatatlan lábmasszázs kupon!",
+    embedGIF: "https://giphy.com/embed/xTiN0CNHgoRf1Ha7CM",
+  },
   {
     day: 7,
     surprise: "csodálatos, pihe-puha karácsonyi ágynemű!",
